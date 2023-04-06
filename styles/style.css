@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor__fundo: #454545;
+    --cor__letras: #FF6000;
+    --cor__menu-e-bordas: #FFA559;
+    --cor__rodape: #FFE6C7;
+    --cor__hover: #DFA67B;
+
+    --fonte__titulos: 'Krona One', sans-serif;
+    --fonte__textos: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body{
+    box-sizing: border-box;
+    background-color: var(--cor__fundo);
+    color: var(--cor__letras);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__navegar{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__navegar__links{
+    font-size: 1.5rem;
+    font-family: var(--fonte__textos);
+    font-weight: 600;
+    color: var(--cor__menu-e-bordas);
+    text-decoration: none;
+}
+
+.foto{
+    margin-right: -20%;
+    border: 2px solid var(--cor__menu-e-bordas);
+    border-radius: 50px;
+    padding: 40px;
+    width: 50%
+}
+
+.foto-curriculo{
+    margin-right: -20%;
+    margin-top: -64%;
+    border: 2px solid var(--cor__menu-e-bordas);
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.apresentacao{
+    padding: 8% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo-destaque{
+    color: var(--cor__menu-e-bordas);
+}
+
+.titulo-destaque:hover{
+    color: var(--cor__hover);
+}
+
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte__titulos);
+}
+
+.apresentacao__conteudo__titulo-curriculo{
+    font-size: 2.25rem;
+    font-family: var(--fonte__titulos);
+    text-align: center;
+}
+
+.apresentacao__conteudo__blococurriculo{
+    border: 2px solid var(--cor__menu-e-bordas);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.apresentacao__conteudo__blococurriculo2{
+    border: 2px solid var(--cor__menu-e-bordas);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-left: -50%;
+    margin-right: 50%;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte__textos);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte__textos);
+}
+
+.apresentacao__conteudo__paragrafo a{
+    text-decoration: none;
+    color: var(--cor__letras);
+}
+
+.apresentacao__conteudo__paragrafo a:hover{
+    color: var(--cor__hover);
+}
+
+.paragrafo-destaque:hover{
+    color: var(--cor__hover);
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte__textos);
+    font-weight: 600px;
+    font-size: 1.5rem;
+    color: var(--cor__letras);
+}
+
+.apresentacao__links__botoes{
+    color: var(--cor__letras);
+    border: 2px solid var(--cor__menu-e-bordas);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--fonte__textos);
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__botoes:hover{
+    background-color: var(--cor__hover);
+}
+
+.rodape{
+    background-color: var(--cor__rodape);
+    color: var(--cor__letras);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte_textos);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media(max-width: 1170px){
+
+    .cabecalho{
+        padding:4%
+    }
+
+    .cabecalho__navegar{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .foto{
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .foto-curriculo{
+        margin: 0;
+        margin-bottom: 5%;
+    }
+}
